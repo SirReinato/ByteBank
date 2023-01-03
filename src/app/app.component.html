@@ -1,1 +1,18 @@
-<app-nova-tranferencia></app-nova-tranferencia>
+<app-nova-tranferencia
+  (aoTransferir)="transferir($event)"
+></app-nova-tranferencia>
+
+<table class="table">
+  <thead>
+    <th>
+      <tr>Valor</tr>
+      <tr>Destino</tr>
+    </th>
+  </thead>
+  <tbody>
+    <td>
+      <tr>{{transferencia?.valor }}</tr>
+      <tr>{{transferencia?.destino }}</tr>
+    </td>
+  </tbody>
+</table>
