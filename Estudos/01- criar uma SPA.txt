@@ -1,0 +1,23 @@
+primeira aula, como utilizar o Angular para criar uma SPA (Single Page Application). Com a ferramenta chamada Angular CLI, é possível criar toda a infraestrutura de um projeto em poucos minutos. Dessa forma, a complexidade de criar todos os arquivos e pastas da aplicação é abstraída com um comando simples.
+
+//vai servi para colocar o cli, não sei se precisa outra vez:
+	npm i -g @angular/cli
+
+//vai ser para criar o projeto:
+	ng new novo-projeto
+
+//dps disso pode colocar a pasta no vs code
+
+//abra o index, dps va em terminal e clique em new terminal
+//no + colocar git bash
+
+//coloque o comando 
+	ng serve --open 
+
+//para criar o primeiro componente 
+	ng g c home (esse ultimo e o nome do componete que quer ciar)
+
+//abra o app.component.html e exclua tudo de lá, dps coloque a tag
+	<app-home></app-home>
+
+//abra o home.component.html e edite o p da forma que quiser

@@ -1,0 +1,37 @@
+Apos criar a SPA vamos criar um diretorio em app, no caso desse projeto vai ser o nova-transferencia, dentro ele tera o nova-transferencia-componet.html/ts/scss
+
+****
+MELHOR FORMA
+NO PROPRIO CMD, APOS ANTES DE INICIAR O SERVER, COLOCAR NG GENERATE C  (NOME DO DIRETORIO) 
+COM ISSO, E SO COLOCAR NO   app.component.html  O IMPORTE DO NOVO DIRETORIO
+***
+primeiro no nova-transferencia-componet.ts, vms colocar o module
+	@Component({
+  	selector: 'app-nova-tranferencia',
+  	templateUrl: './nova-transferencia.componet.html',
+ 	 styleUrls: ['./nova-tranferencia.componet.scss'],
+	})
+nele vai conter os outros dois.
+
+apos isso ir no app.module e importar no @NgModule
+	@NgModule({
+ 	 declarations: [
+    	AppComponent,
+    	NovaTransferenciaComponet            <----
+  	]
+apos isso, ir no app.component.html e colocar 
+	<app-nova-tranferencia></app-nova-tranferencia>
+
+no nova-transferencia.componet.html escrever o código 
+
+
+
+no formulário, o (ngSubmit)="F U N Ç A O" a função que vai esta em nova-transferencia-componet.ts, servira para fazer o submit do botão sem ter que fazer todo aquele processo.
+
+para isso, ir no app.module e importar FormsModule
+	imports: [
+    	BrowserModule,
+    	FormsModule                       <----
+  	],
+
+no formulario, vai ter um input do tipo number com o name de valor, para coletar esse numero, apenas colocar  [(ngModel)]="valor" (independente do nome, apenas colocar o name do input.
